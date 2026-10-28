@@ -1,0 +1,6 @@
+echo '{
+  "appId": "com.codevoid.app",
+  "appName": "CodeVoid",
+  "webDir": ".",
+  "bundledWebRuntime": false
+}' > capacitor.config.json
