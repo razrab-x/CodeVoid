@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#080b14" />
+    <title>Код с нуля — учись программировать</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <script src="playground.js" defer></script>
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Код с нуля — на главную"><span class="brand-mark">{ }</span><span>код<span class="brand-muted">с нуля</span></span></a>
+      <nav class="topnav" aria-label="Основная навигация">
+        <a href="#roadmap">Программа</a>
+        <a href="#how">Как учиться</a>
+      </nav>
+      <a class="nav-cta" href="#roadmap">Начать путь <span>↗</span></a>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-glow glow-one"></div><div class="hero-glow glow-two"></div>
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="pulse-dot"></span> ПОНЯТНО. ПОШАГОВО. С НУЛЯ.</div>
+          <h1>Не просто учи код.<br />Научись <span class="gradient-text">думать</span> как разработчик.</h1>
+          <p class="hero-lead">Путь от первого «что такое код?» до собственных проектов. Без заумных слов — с понятными объяснениями, практикой и ощущением, что у тебя реально получается.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#roadmap">Изучить программу <span>↓</span></a><a class="text-link" href="#how"><span class="play-icon">▶</span> Как это работает</a></div>
+          <div class="hero-proof"><div class="avatar-stack"><span>✦</span><span>⌘</span><span>λ</span></div><span>От первых строк — к своим проектам</span></div>
+        </div>
+        <div class="hero-visual reveal" aria-label="Анимированный пример кода">
+          <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+          <div class="float-tag tag-top"><span class="tag-dot"></span> твой первый проект</div>
+          <div class="code-window">
+            <div class="window-bar"><div class="window-dots"><i></i><i></i><i></i></div><span>hello_world.js</span><span class="window-language">JS</span></div>
+            <div class="code-body"><div class="code-line"><span class="line-no">01</span><span><b class="code-purple">const</b> <b class="code-blue">ты</b> = <b class="code-green">"будущий разработчик"</b>;</span></div><div class="code-line"><span class="line-no">02</span><span></span></div><div class="code-line"><span class="line-no">03</span><span><b class="code-purple">function</b> <b class="code-yellow">начать</b>() {</span></div><div class="code-line"><span class="line-no">04</span><span class="indent"><b class="code-blue">учиться</b>();</span></div><div class="code-line"><span class="line-no">05</span><span class="indent"><b class="code-blue">пробовать</b>();</span></div><div class="code-line"><span class="line-no">06</span><span class="indent"><b class="code-purple">return</b> <b class="code-green">"получилось!"</b>;</span></div><div class="code-line"><span class="line-no">07</span><span>}</span></div><div class="code-line"><span class="line-no">08</span><span></span></div><div class="code-line"><span class="line-no">09</span><span><b class="code-yellow">начать</b>(); <span class="cursor">▍</span></span></div></div>
+            <div class="terminal"><span class="terminal-prompt">➜</span><span>получилось!</span><span class="terminal-check">✓</span></div>
+          </div>
+          <div class="float-tag tag-bottom"><span>✦</span> сложное становится понятным</div>
+        </div>
+        <a class="scroll-hint" href="#roadmap"><span></span> ЛИСТАЙ, ТВОЙ ПУТЬ НАЧИНАЕТСЯ ЗДЕСЬ</a>
+      </section>
+
+      <section class="ticker" aria-label="Что тебя ждёт"><div class="ticker-track"><span>МЫШЛЕНИЕ</span><b>✳</b><span>ПЕРЕМЕННЫЕ</span><b>✳</b><span>ЛОГИКА</span><b>✳</b><span>ФУНКЦИИ</span><b>✳</b><span>СВОИ ПРОЕКТЫ</span><b>✳</b><span>МЫШЛЕНИЕ</span><b>✳</b><span>ПЕРЕМЕННЫЕ</span><b>✳</b><span>ЛОГИКА</span><b>✳</b><span>ФУНКЦИИ</span><b>✳</b><span>СВОИ ПРОЕКТЫ</span><b>✳</b></div></section>
+
+      <section class="roadmap section-wrap" id="roadmap">
+        <div class="section-heading reveal"><div><div class="eyebrow"><span class="section-number">01</span> ТВОЙ МАРШРУТ</div><h2>Большой путь.<br /><span class="muted-heading">Маленькие шаги.</span></h2></div><p>Не нужно знать всё сразу. Каждый следующий шаг опирается на предыдущий — спокойно, логично и с практикой.</p></div>
+        <div class="course-picker" aria-label="Выбери направление обучения">
+          <div class="picker-heading"><span class="picker-kicker">СНАЧАЛА ВЫБЕРИ НАПРАВЛЕНИЕ</span><span class="picker-hint">Можно попробовать несколько — прогресс у каждого свой</span></div>
+          <div class="course-grid" id="courseGrid"></div>
+        </div>
+        <div class="course-choose-note"><span class="note-icon">↗</span><div><strong>Выбери язык — откроется его отдельный курс</strong><span>40 уроков в 10 главах, примеры именно этого языка, практика и сохранение прогресса.</span></div></div>
+      </section>
+
+      <section class="how-section" id="how">
+        <div class="section-wrap how-inner"><div class="how-copy reveal"><div class="eyebrow"><span class="section-number">02</span> НИКАКОЙ МАГИИ</div><h2>Код — это просто<br /><span class="gradient-text">мысль, записанная точно.</span></h2><p>Представь рецепт: шаг за шагом ты объясняешь компьютеру, что делать. Здесь ты научишься составлять такие «рецепты» — и поймёшь, что программирование доступнее, чем кажется.</p><a class="button button-ghost" href="#roadmap">Посмотреть шаги <span>→</span></a></div>
+          <div class="recipe-card reveal"><div class="recipe-top"><span>РЕЦЕПТ ПРОГРАММИСТА</span><span class="recipe-spark">✳</span></div><div class="recipe-step"><span class="step-count">01</span><div><b>Разберись</b><span>Пойми идею на обычном примере</span></div><span class="step-check">✓</span></div><div class="recipe-step"><span class="step-count">02</span><div><b>Попробуй</b><span>Напиши код и посмотри, что выйдет</span></div><span class="step-check">✓</span></div><div class="recipe-step"><span class="step-count">03</span><div><b>Собери</b><span>Примени знания в своём проекте</span></div><span class="step-check">✦</span></div><div class="recipe-note"><span>💡</span> Ошибки — не провал. Это подсказки на пути.</div></div>
+        </div>
+      </section>
+
+      <section class="final-cta section-wrap"><div class="cta-orb"></div><div class="eyebrow"><span class="pulse-dot"></span> ЛУЧШИЙ МОМЕНТ — СЕЙЧАС</div><h2>Твой первый шаг<br />занимает <span class="gradient-text">одну минуту.</span></h2><p>Выбери первый модуль, двигайся в своём темпе и отмечай пройденное. Всё начинается с любопытства.</p><a class="button button-primary" href="#roadmap">Начать с самого начала <span>→</span></a></section>
+    </main>
+
+    <section class="tutorial-screen" id="tutorialScreen" aria-label="Обучение выбранному языку" hidden>
+      <header class="tutorial-topbar">
+        <button class="back-button" id="backToHome" type="button" aria-label="Вернуться к выбору языка"><span aria-hidden="true">←</span> На главную</button>
+        <a class="brand" href="#home" aria-label="Код с нуля"><span class="brand-mark">{ }</span><span>код<span class="brand-muted">с нуля</span></span></a>
+        <span class="tutorial-top-label">ТВОЙ УЧЕБНЫЙ МАРШРУТ</span>
+      </header>
+      <div class="tutorial-heading section-wrap">
+        <div class="eyebrow"><span class="pulse-dot"></span> ПОЛНЫЙ ПУТЬ · ОТ ПЕРВОЙ СТРОКИ ДО ПРОЕКТА</div>
+        <h1 id="tutorialTitle"></h1>
+        <p id="tutorialAbout"></p>
+        <div class="tutorial-overall-progress"><div class="tutorial-progress-label"><span>ТВОЙ ПРОГРЕСС</span><span id="tutorialProgressText">0 / 40 уроков</span></div><div class="progress-line"><div class="progress-fill" id="tutorialProgressFill"></div></div></div>
+      </div>
+      <div class="tutorial-layout section-wrap">
+        <aside class="tutorial-sidebar"><div class="sidebar-heading"><span>ПРОГРАММА КУРСА</span><span id="sidebarCount">40 УРОКОВ</span></div><nav id="tutorialNav" aria-label="Уроки курса"></nav></aside>
+        <article class="tutorial-lesson" id="tutorialLesson" aria-live="polite"></article>
+      </div>
+    </section>
+    <footer class="footer"><a class="brand" href="#home"><span class="brand-mark">{ }</span><span>код<span class="brand-muted">с нуля</span></span></a><span>Учись понимать. Создавай своё. © <span id="year"></span></span><a href="#home" class="back-top">Наверх ↑</a></footer>
+  </body>
+</html>
